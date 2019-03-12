@@ -7,8 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link rel="stylesheet" href="static/css/style.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="static/css/ufoStyle.css">
+  <link rel="stylesheet" href="static/css/star.css">
   <script src="https://d3js.org/d3.v5.min.js"></script>
+
 </head>
 
 <body>
@@ -28,29 +35,72 @@
     </div>
     <div class="container">
       <div class="row margin-top-50">
-        <div class="col-md-2">
+        <div class="col-md-3">
           <aside class="filters">
             <div class="panel panel-default">
               <div class="panel-heading">Filter Search</div>
               <div class="panel-body">
-                <form>
+                <form id="search">
                   <div class="form-group">
                     <ul class="list-group" id="filters">
-                      <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
-                      </li>
-                    </ul>
+                        <li class="filter list-group-item">
+                            <label for="date">Date:</label>
+                            <input class="form-control" id="datetime" type="date" dateformat="d M y" >
+                        </li>
+                        <li class="filter list-group-item">
+                            <label for="shape">Shape:</label>
+                            <select class="form-control" id="shape">
+                                <option value="">--select--</option>
+                                <option value="changing">Changing</option>
+                                <option value="chevron">Chevron</option>
+                                <option value="cigar">Cigar</option>
+                                <option value="circle">Circle</option>
+                                <option value="cross">Cross</option>
+                                <option value="cylinder">Cylinder</option>
+                                <option value="disk">Disk</option>
+                                <option value="fireball">Fireball</option>
+                                <option value="flash">Flash</option>
+                                <option value="formation">Formation</option>
+                                <option value="light">Light</option>
+                                <option value="other">other</option>
+                                <option value="oval">Oval</option>
+                                <option value="rectangle">Rectangle</option>
+                                <option value="sphere">Sphere</option>
+                                <option value="teardrop">Teardrop</option>
+                                <option value="triangle">Triangle</option>
+                                <option value="unknown">Unknown</option>
+                            </select>
+                        </li>
+                        <li class="filter list-group-item">
+                            <label>City:</label>
+                            <input class="form-control" id="city" type="text">
+                        </li>
+                        <li class="filter list-group-item">
+                            <label>State:</label>
+                            <input class="form-control" id="state" type="text">
+                        </li>
+                        <li class="filter list-group-item">
+                            <label for="shape">Country:</label>
+                            <select id="country" class="form-control">
+                                <option value="us">U.S.</option>
+                                <option value="ca">Canada</option>
+                            </select>
+                        </li>
+                        <li class="filter list-group-item">
+                            <button id="filter-btn" type="submit" class="btn btn-info text-center">Filter Table</button>
+                        </li>
+                    </ul>                    
                   </div>
-                  <button id="filter-btn" type="submit" class="btn btn-default">Filter Table</button>
+                  
                 </form>
               </div>
             </div>
           </aside>
         </div>
-        <div class="col-md-10">
+
+        <div class="col-md-9">
           <div id="table-area" class="">
-            <table id="ufo-table" class="table table-striped">
+            <table id="ufo-table" class="table table-bordered table-hover table-striped">
               <thead>
                 <tr>
                   <th class="table-head">Date</th>
@@ -68,9 +118,33 @@
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <span class="bottom">UFO Sightings</span>
+    <div class="card border-dark mb-3 text-dark">
+        <div class="card-header text-center">
+            <h3>Mars Facts</h3>
+        </div>
+        <div class="card-body">
+            <table class="table-bordered table-responsive-sm table-responsive-lg">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer class="footer text-center">
+      <span class="bottom">
+        <p><strong><i>© 2019 Copyright: Janie Wallace</i></strong></p>
+      </span>
     </footer>
+    <!-- Animated stars begin -->
+    <div id='stars' />
+    <div id='stars2' />
+    <div id='stars3' />
+    <!-- Animated stars end -->
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
   <script src="static/js/data.js"></script>
