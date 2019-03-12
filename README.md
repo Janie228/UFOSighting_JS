@@ -46,7 +46,7 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 - - -
 ### Janie's Result
-* [UFO Sightings Screenshot](static/images/ufoData.JPG)
+![ufoData.JPG](static/images/ufoData.JPG)
 
 - - -
 ### Copyright
