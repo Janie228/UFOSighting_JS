@@ -45,7 +45,10 @@ You can handle this... right? The planet Earth needs to know what we have found!
 **Good luck!**
 
 - - -
+### Janie's Result
+* [UFO Sightings Screenshot](static/images/ufoData.JPG)
 
+- - -
 ### Copyright
 
 Data Boot Camp © 2018. All Rights Reserved.
