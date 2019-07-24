@@ -1,4 +1,4 @@
-# [UFO Sighting with JS & DOM Manipulation](https://janie228.github.io/UFO_Sighting_JS/)
+# [UFO Sighting Data Search](https://janie228.github.io/UFO_Sighting_JS/)
 -----
 
 ## Background
