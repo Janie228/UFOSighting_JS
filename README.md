@@ -1,4 +1,4 @@
-# [UFO Sighting with JavaScript & DOM Manipulation](https://janie228.github.io/UFO_Sighting/)
+# [UFO Sighting with JS & DOM Manipulation](https://janie228.github.io/UFO_Sighting/)
 -----
 
 ## Background
@@ -37,7 +37,7 @@ You can handle this... right? The planet Earth needs to know what we have found!
 **Good luck!**
 
 - - -
-## Janie's Result
+## Results
 ![ufoData.JPG](static/images/ufoData.JPG)
 
 - - -
