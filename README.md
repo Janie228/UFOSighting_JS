@@ -35,7 +35,7 @@ You can handle this... right? The planet Earth needs to know what we have found!
 - - -
 
 ## Results
-* The title of this project contains the link to this website.
+* [Click here to website](https://janie228.github.io/UFO_Sighting_JS/)
 ![ufoData.JPG](static/images/ufoData.JPG)
 
 - - -
