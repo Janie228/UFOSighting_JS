@@ -1,4 +1,4 @@
-# [UFO Sighting Data Search](https://janie228.github.io/UFO_Sighting_JS/)
+# [UFO Sighting Search](https://janie228.github.io/UFO_Sighting_JS/)
 -----
 
 ## Background
