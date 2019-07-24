@@ -34,9 +34,6 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 - - -
 
-**Good luck!**
-
-- - -
 ## Results
 * The title of this project contains the link to this website.
 ![ufoData.JPG](static/images/ufoData.JPG)
